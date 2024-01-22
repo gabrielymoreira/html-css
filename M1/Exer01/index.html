@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="kamyso.ico" type="image/x-icon">
+    <title>Teste de Favicon </title> <!-- Favicon é o ícone que aparece ao lado do title-->
+</head>
+<body>
+
+    <h2> Códigos / Símbolos </h2>
+    <p> &copy; <!-- códigos de alguns símbolos -->
+        &euro; 
+        &cent;
+        &#x1F596; <!-- Emojis. Acessar site emojipedia e copiar apenas o código dps da letra e colocar dps do &#x-->    
+    </p>
+
+    <h2> Fotos </h2>
+    <img src="guirlanda.jpg" width="200" alt="Guirlanda Natalina 1"> <!-- inserir imagens salvas -->
+    <img src="imagens/guirlanda2.png" alt="Guirlanda Natalina 2"> <!-- Inserir imagens salvas que estão dentro de uma pasta -->
+    <img src="https://cdn.awsli.com.br/600x450/1878/1878158/produto/1792521101ddbc95942.jpg" alt="Guirlanda "></p> <!-- Inserir imagens não salvas, da internet com o URL -->
+
+        <h2>Negrito / Destaque </h2>
+        <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semântica) </p> <!-- Negrito-->
+        <p>Nesta frase temos um <strong>termo em negrito</strong> usando a tag strong (semântica) </p>
+
+        <h2> Itálico / Ênfase </h2>
+        <p>Nesta frase temos um <i>termo em itálico</i> usando a tag i (não semântica) </p> <!-- Itálico-->
+        <p>Nesta frase temos um <em>termo em itálico</em> usando a tag em (semântica) </p>  
+
+        <h2> Texto Marcado </h2>
+        <p>Podemos criar também um <mark style="background-color: darkorchid;">texto marcado</mark> com a tag MARK </p>
+
+        <h2> Texto Excluído </h2>
+        <p>Podemos marcar um <del>texto como excluído</del> usando a tag del, para indicar que ele deve ser lido, mas não considerado </p>
+
+        <h2> Texto Inserido </h2>
+        <p>Podemos marcar um <ins>texto como incluído</ins> usando a tag ins, para dar uma ênfase e indicar que ele foi adicionado depois</p>
+
+        <h2> Texto sobrescrito</h2>
+        <p> Para inserir coisas do tipo x<sup>20</sup>+3</p>
+        <h2> Texto subescrito</h2>
+        <p> Para inserir coisas do tipo H<sub>2</sub>O</p>
+
+        <h2> Código Fonte / Pré Formatação </h2>
+        <p> Ajustar espaçamento das fontes. Exemplo: <code>inscrever</code> X inscrever </p>
+
+        <pre>
+            <code>
+                se (n>100){
+                    escreva ("Esse número é maior que 100")
+                }
+                senao {
+                    escreva ("Esse número é menor que cem")
+                }
+            </code>
+        </pre>
+
+        <h2> Citações Simples </h2>
+        <p> Como diria um pai de um amigo: <q>o computador é um burro muito rápido</q> </p>
+
+        <h2> Citações Completas </h2>
+        <p> Segundo Jeff Noble, no seu livro HTML para Leigos</p>
+        <blockquote cite=""><!--Inserir link para dar os créditos -->
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam a eos dolore deleniti perferendis nesciunt sapiente iste molestias hic? Distinctio, ut nesciunt vitae fugiat et doloremque modi blanditiis facere cum?
+        </blockquote>
+        
+        <h2> Abreviações</h2>
+        <p> Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+
+        <h1>Trabalhando com listas </h1>
+        <h2>Listas Ordenadas</h2>
+        <ol type="A"> <!-- Podemos escolher como a lista será ordenada usando o type: 1, A, a, I, i-->
+            <li> Acordar </li>
+            <li> Tomar Café</li>
+            <li> Escovar os dentes </li>
+        </ol>
+
+        <ol type="1" start="4"> <!-- Podemos escolher também o seu ponto inicial-->
+            <li> Acordar </li>
+            <li> Tomar Café</li>
+            <li> Escovar os dentes </li>
+        </ol>
+
+        <h2>Lista Não Ordenadas</h2>
+        <ul type="circle" > <!-- Escolher o tipo de índice: disc, circle, square-->
+            <li> Comprar pão</li>
+            <li> Comprar roupa</li>
+            <li> Comprar remédio</li>
+        </ul>
+
+        <ul type="square" > 
+            <li> Comprar pão</li>
+            <li> Comprar roupa</li>
+            <li> Comprar remédio</li>
+        </ul>
+
+        <h2>Minhas Linguagens Favoritas</h2>
+        <ol >
+            <li> Antigas </li>
+            <ol type="a">
+                <li> Clipper </li>
+                <li> Fortran </li>
+                <li> Cobol </li>
+            </ol>
+            <li> Novas </li>
+            <ol type="a">
+                <li> JavaScripy</li>
+                <li> PHP</li>]
+                <li> Phyton </li>
+            </ol>
+        </ol>
+
+        <h2> Meus Jogos Favoritos</h2>
+        <ol >
+            <li> Antigas </li>
+            <ul type="a">
+                <li> Clipper </li>
+                <li> Fortran </li>
+                <li> Cobol </li>
+            </ul>
+            <li> Novas </li>
+            <ul type="a">
+                <li> JavaScripy</li>
+                <li> PHP</li>
+                <li> Phyton </li>
+            </ul>
+        </ol>
+
+        <h2>Lista de Definição</h2>
+        <dl>
+            <dt>Termo</dt>
+            <dd>Descrição</dd>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação para criação de sites</dd>
+        </dl>
+        <picture>
+            <source media="(max-width:750px )" srcset="imagens/guirlanda2.png" type="image/png">
+            <img src="guirlanda.jpg" alt="Guirlanda">
+        </picture>
+</body>
+</html>

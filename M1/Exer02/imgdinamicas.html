@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midies em HTML5 </title>
+</head>
+<body>
+    <h2>Imagens Dinâmicas</h2>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img-P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img-M.png" type="image/png">
+        <img src="imagens/img-G.png" alt="Imagem Grande">
+    </picture>
+
+    <h2>Reproduzindo Áudios</h2>
+
+    <audio src="Girl On Top - Amy Lynn & the Honeymen.mp3" controls autoplay></audio>
+    <audio src="reflections.mpeg" controls autoplay></audio> <!-- Duas formas de colocar áudio-->
+
+    <audio preload="metadata" autoplay controls>
+        <source src="reflections.mpeg" type="audio/mpeg"> <!-- Formatos: MP3, WAV, OGG-->
+        <source src="reflections.wav" type="audio/wav"> <!-- Caso não funcione no primeiro formato, o navegador tentará os outros (wav, ogg)-->
+        <source src="reflections.ogg" type="audio/ogg"></source> <!-- formatos apenas exemplos, não tinha o arquivo-->
+        <p>Infelizmente seu navegador não consegue reprodir o áudio </p>
+    </audio>
+
+    <h1>Reproduzindo Vídeos </h1>
+    <h2> Vídeos Hospedados </h2>
+    <!-- Formatos: MP4, MP4V, WEBM, OGV-->
+    <p>Este vídeo está hospedado no meu próprio servidor </p>
+    <video width="500" controls src="mar.mp4"></video>
+        
+
+    <!-- Para deixar compatível com outros navegadores-->
+
+    <video controls width="500" poster=""> <!-- a tag poster serve para colocar capa nos vídeos-->
+        <source src="mar.mp4" type="video/mp4">
+        <source src="mar.m4v" type="video/mp4"> <!-- Formatos apenas de exemplo, não tinha o arquivo-->
+        <source src="mar.ogv" type="video/ogv">
+        <source src="mar.webm"type="video/webm">
+        <p> Seu navegador não tem compatibilidade com reprodução de vídeos </p>
+    </video>
+
+    <h2> Vídeos Externos </h2>
+
+    <h3> Inserindo vídeos do YouTube</h3> <!-- Em compartilhar, clique em 'incorporar' e copie o código-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=3shTIyjz2DWRrgo-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h3>Inserindo vídeos do Vimeo</h3> <!-- Vimeo: mais qualidade, mas tem mais chances de travar-->
+    <iframe src="https://player.vimeo.com/video/877812590?h=317ddbee63" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

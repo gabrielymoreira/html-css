@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Indoid';
+    src: url(pacote-projeto-d010/fontes/idroid.otf) format(opentype);
+}
+body{
+    background-color: #84E1AD;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+#historia > h1{
+    font-size: 2em;
+}
+header{
+    color: white;
+    margin: 0px;
+    background-image: linear-gradient(to bottom,  #3DDA84, #185A36);
+}
+
+header >h1{
+    font-family: 'Bebas Neue';
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    padding-top: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.408);
+    font-weight:lighter ;
+
+}
+header > p{
+    text-align: center;
+}
+h1, h2{
+    font-family: 'Indoid';
+    color:#185A36 ;
+    margin-top: 0px;
+}
+nav{
+    text-align: left;
+    padding: 20px 10px 10px 15px;
+}
+nav >a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+   
+    
+}
+ a{
+    color: #185A36;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+ }
+
+.bold {
+    font-weight: bold;
+    color: #185A36;
+    background-color:#C5EBD6 ;
+}
+
+
+header{
+    height: 220px;
+    background-color: #49ac76;
+    margin-top: 0px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.407);
+}
+main{
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px auto 0px auto;
+    width: 1150px;
+    padding: 20px;
+}
+footer{
+    background-color: #1A5C38;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    padding: 8px;
+    margin: 20px 0px 0px 0px;
+} 
+iframe{
+    border: 20px solid #1A5C38;
+    margin: 0px;
+}
+aside{
+    background-color: #C5EBD6;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 0px;
+}
+#saibamais > h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #2FA866;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 0px;
+}
+section > p{
+    text-indent: 30px;
+}
+footer > p{
+    margin: 0px;
+   
+}
+img{
+    text-align: center;
+}
+h2{
+    background-image: linear-gradient(to right, #C5EBD6, white);
+    padding-left: 10px;
+}
+nav > a:hover{
+    background-color: #49ac76;
+    border-radius: 10px;
+    color:#1A5C38 ;
+}
+
